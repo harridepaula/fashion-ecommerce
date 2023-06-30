@@ -1,108 +1,163 @@
-/* ROOT STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Root Styles */
 
 :root {
 
-    /* colors */
-  
-    --white: hsl(0, 0%, 93%);
-    --light-gray: hsl(0, 0%, 60%);
-    --mid-gray: hsl(0, 0%, 47%);
-    --dark-gray: hsl(0, 0%, 33%);
-    --black: hsl(0, 0%, 13%);
-    --light-coral: hsl(353, 100%, 78%);
-    --sandy-orange: hsl(29, 90%, 65%);
-    --coral: hsl(0, 100%, 70%);
-    --ocean-green: hsl(152, 51%, 52%);
-  
-    /* typography */
-  
-    --fs-1: 1.563rem;
-    --fs-2: 1.375rem;
-    --fs-3: 1.25rem;
-    --fs-4: 1.125rem;
-    --fs-5: 1rem;
-    --fs-6: 0.938rem;
-    --fs-7: 0.875rem;
-    --fs-8: 0.813rem;
-    --fs-9: 0.75rem;
-    --fs-10: 0.688rem;
-    --fs-11: 0.625rem;
-  
-    --weight-300: 300;
-    --weight-400: 400;
-    --weight-500: 500;
-    --weight-600: 600;
-    --weight-700: 700;
-  
-    /* border-radius */
-  
-    --border-radius-md: 10px;
-    --border-radius-sm: 5px;
-  
-    /* transition */
-  
-    --transition-timing: 0.2s ease;
-  
-  }
+  /* colors */
+
+  --white: hsl(0, 0%, 93%);
+  --light-gray: hsl(0, 0%, 60%);
+  --mid-gray: hsl(0, 0%, 47%);
+  --dark-gray: hsl(0, 0%, 33%);
+  --black: hsl(0, 0%, 13%);
+  --light-coral: hsl(353, 100%, 78%);
+  --sandy-orange: hsl(29, 90%, 65%);
+  --coral: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
+
+  /* typography */
+
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /* border-radius */
+
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
+
+  /* transition */
+
+  --transition-timing: 0.2s ease;
+
+}
 
 
 /* RESET */
 
 *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  a { text-decoration: none; }
-  
-  li { list-style: none; }
-  
-  button {
-    background: none;
-    font: inherit;
-    border: none;
-    cursor: pointer;
-  }
-  
-  img, ion-icon, button, a { display: block; }
-  
-  span { display: inline-block; }
-  
-  html {
-    font-family: "Poppins", sans-serif;
-    overscroll-behavior: contain;
-  }
-  
-  input {
-    display: block;
-    width: 100%;
-    font: inherit;
-  }
-  
-  input::placeholder { font: inherit; }
-  
-  body { background: var(--white); }
-  
-  /**
-   * scrollbar style
-   */
-  
-  body::-webkit-scrollbar { width: 15px; }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--white);
-    border-left: 1px solid var(--cultured);
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: hsl(0, 0%, 80%);
-    border: 3px solid var(--white);
-    border-radius: 10px;
-  }
-  
-  body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
-  
-  
-/* UTILITIES */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+img, ion-icon, button, a { display: block; }
+
+span { display: inline-block; }
+
+html {
+  font-family: "Poppins", sans-serif;
+  overscroll-behavior: contain;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
+input::placeholder { font: inherit; }
+
+body { background: var(--white); }
+
+/**
+ * scrollbar style
+ */
+
+body::-webkit-scrollbar { width: 15px; }
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 80%);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
+
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
