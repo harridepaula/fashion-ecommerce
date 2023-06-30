@@ -18,17 +18,11 @@
 
   /* typography */
 
-  --fs-1: 1.563rem;
-  --fs-2: 1.375rem;
-  --fs-3: 1.25rem;
-  --fs-4: 1.125rem;
-  --fs-5: 1rem;
-  --fs-6: 0.938rem;
-  --fs-7: 0.875rem;
-  --fs-8: 0.813rem;
-  --fs-9: 0.75rem;
-  --fs-10: 0.688rem;
-  --fs-11: 0.625rem;
+  --fs-xlarge: 1.5rem;
+  --large: 1.25rem;
+  --medium: 1rem;
+  --fs-small: 875rem;
+  --fs-xsmall: 0.75rem;
 
   --weight-300: 300;
   --weight-400: 400;
@@ -38,8 +32,8 @@
 
   /* border-radius */
 
-  --border-radius-md: 10px;
-  --border-radius-sm: 5px;
+  --border-radius-md: 0.75em;
+  --border-radius-sm: 0.5em;
 
   /* transition */
 
@@ -125,28 +119,29 @@ html {
 h1 {
   font-size: 50px;
   line-height: 64px;
-  color: #222;
+  color: var(--black);
 }
 
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: #222;
+  color: var(--black);
 }
 
 h4 {
   font-size: 20px;
-  color: #222;
+  color: var(--black);
 }
 
 h6 {
   font-weight: 700;
   font-size: 12px;
+  color: var(--black);
 }
 
 p {
   font-size: 16px;
-  color: #465b52;
+  color: var(--dark-gray);
   margin: 15px 0 20px 0;
 }
 
