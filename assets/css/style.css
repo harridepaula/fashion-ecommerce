@@ -4,17 +4,15 @@
 
     /* colors */
   
-    --spanish-gray: hsl(0, 0%, 60%);
-    --sonic-silver: hsl(0, 0%, 47%);
-    --eerie-black: hsl(0, 0%, 13%);
-    --salmon-pink: hsl(353, 100%, 78%);
-    --sandy-brown: hsl(29, 90%, 65%);
-    --bittersweet: hsl(0, 100%, 70%);
+    --white: hsl(0, 0%, 93%);
+    --light-gray: hsl(0, 0%, 60%);
+    --mid-gray: hsl(0, 0%, 47%);
+    --dark-gray: hsl(0, 0%, 33%);
+    --black: hsl(0, 0%, 13%);
+    --light-coral: hsl(353, 100%, 78%);
+    --sandy-orange: hsl(29, 90%, 65%);
+    --coral: hsl(0, 100%, 70%);
     --ocean-green: hsl(152, 51%, 52%);
-    --davys-gray: hsl(0, 0%, 33%);
-    --cultured: hsl(0, 0%, 93%);
-    --white: hsl(0, 100%, 100%);
-    --onyx: hsl(0, 0%, 27%);
   
     /* typography */
   
@@ -108,33 +106,3 @@
   
 /* UTILITIES */
 
-
-.container { padding: 0 15px; }
-
-.has-scrollbar { padding-bottom: 5px; }
-
-.has-scrollbar::-webkit-scrollbar {
-  width: 12px; /* for vertical scroll */
-  height: 12px; /* for horizontal scroll */
-}
-
-.has-scrollbar::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: 3px solid var(--white);
-  border-radius: 20px;
-}
-
-.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
-
-.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
-
-.title {
-  color: var(--eerie-black);
-  font-size: var(--fs-5);
-  font-weight: var(--weight-600);
-  letter-spacing: 0.4px;
-  text-transform: capitalize;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--cultured);
-  margin-bottom: 30px;
-}
